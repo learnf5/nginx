@@ -1,7 +1,6 @@
-These are the files for Lab 03
+# These are the files for Lab 03
 
-
-LPS script
+# LPS scripting
 
 {
   "CMDLIST": [

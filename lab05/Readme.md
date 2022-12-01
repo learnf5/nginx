@@ -1,6 +1,6 @@
-These are the files for Lab 05
+# These are the files for Lab 05
 
-Instructions:
+# LPS scripting
 
 {
   "CMDLIST": [

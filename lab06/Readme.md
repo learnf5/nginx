@@ -1,1 +1,4 @@
-These are the files for Lab 06
+# These are the files for Lab 06
+
+# LPS scripting
+

@@ -1,6 +1,6 @@
-These are the files for Lab 08
+# These are the files for Lab 08
 
-This is the LPS script for Lab 08
+# LPS scripting
 
 {
   "CMDLIST": [
