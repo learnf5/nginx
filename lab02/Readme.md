@@ -4,7 +4,6 @@
 
 {
   "CMDLIST": [
-    "mkdir /home/student/Desktop/Lab_Files",
     "wget -P /tmp https://github.com/learnf5/nginx/raw/main/nginx-fundamentals-labs.tgz",
     "cd /home/student",
     "tar xzvf /tmp/nginx-fundamentals-labs.tgz",
