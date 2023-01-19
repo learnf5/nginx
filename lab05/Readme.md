@@ -9,10 +9,14 @@
     "tar xzvf /tmp/nginx-fundamentals-labs.tgz",
     "ln -s /home/student/NGINX-Fundamentals-Labs/index.html /home/student/Desktop/Double-Click-2-Run-Labs",
     "wget -P /etc/nginx/conf.d https://github.com/learnf5/nginx/raw/main/lab05/mywebserver.bak",
-    "wget -P /tmp https://github.com/learnf5/nginx/raw/main/lab09/data-images.tgz",
+    "wget -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz",
     "cd /",
     "tar -xzvf /tmp/data-images.tgz",
     "chmod -R +x /data",
+    "wget -P /tmp https://github.com/learnf5/nginx/raw/main/lab06/public_html.tgz",
+    "cd /home",
+    "tar -xzvf /tmp/public_html.tgz",
+    "chmod -R +x /home/ubuntu",
     "ip route change default via 10.0.0.100"
   ]
 }

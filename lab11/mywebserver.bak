@@ -16,11 +16,6 @@ log_format test_log ‘"Request: $request\n Status: $status\n Request_URI: $requ
 
 server {
     listen 80;
-    return 301 https://$host$request_uri;
-}
-
-server {
-    listen 443 ssl;
     root /home/ubuntu/public_html;
 
     error_log /var/log/nginx/mywebserver.error.log info;
