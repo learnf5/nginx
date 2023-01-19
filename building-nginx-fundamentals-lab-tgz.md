@@ -13,3 +13,4 @@
 11) Copy the end file back to your local system (if necessary)
 12) upload the new file to GitHub repo https://github.com/learnf5/nginx
 13) TEST the new file by launching a NGINX Fundamentals Lab from LearnF5
+14) Place a copy of nginx-fundamentals-labs.tgz in Xyleme CDS here, https://f5.bravais.com/adminportal/documents#%2F1635
