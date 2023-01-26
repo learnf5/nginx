@@ -24,8 +24,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo "Check to see if the ls -l output below succeeded and the files are present"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-l/home/student/NGINX-Fundamentals-Labs/index.html
-ls -l /home/student/Desktop/*
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html ; ls -l /home/student/Desktop/*
 
 read -p "Press the ENTER key to proceed"
 
@@ -35,24 +34,24 @@ clear
 echo "+++++ This is step 3 of 5  - Pull down and expand the public_html tree ++"
 wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
 cd /home
-tar -xzvf /tmp/public_html.tgz
+tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
 
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo "Check to see if the tree output below succeeded and the directory is present"
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "Check to see if the tree output below succeeded and the directory (and permissions) are present"
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree /home/ubuntu/public_html
+ls -ld /home/ubuntu ; tree /home/ubuntu/public_html
 
 read -p "Press the ENTER key to proceed"
 
 ## Get and place the data/images contents
 
 clear
-echo "+++++ This is step 4 of 5  - Pull down and expand the data/images tree ++"
+echo "+++++ This is step 4 of 5  - Pull down and expand the data/images tree +++++"
 wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
 cd /
-tar -xzvf /tmp/data-images.tgz
+tar -xzf /tmp/data-images.tgz
 chmod -R +x /data
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
@@ -60,12 +59,13 @@ echo "Check to see if the tree output below succeeded and the directory is prese
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 tree /data
+
 read -p "Press the ENTER key to proceed"
 
 ## Get and place the data/server2 contents
 
 clear
-echo "+++++ This is step 5 of 5  - Get and place the data/server2 tree +++++++++"
+echo "+++++ This is step 5 of 5  - Get and place the data/server2 tree +++++++++++"
 wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
 cd /
 tar -xzvf /tmp/data-server2.tgz
@@ -76,5 +76,7 @@ echo "Check to see if the tree output below succeeded and the directory is prese
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 tree /data
+
 read -p "Press the ENTER key to proceed"
+
 clear
