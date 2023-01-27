@@ -107,11 +107,11 @@ tree -p /data && STEP5="OK"
 
 read -p "Press the ENTER key to proceed"
 
-echo "\ "
+echo "\n"
 echo "##################################RESULTS#################################"
 echo "If all Steps show a green OK, System is setup for Lab Usage"
 echo "##########################################################################"
-echo "\ "
+echo "\n"
 
 echo -e "STEP 1: \e[0;32mOK \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
