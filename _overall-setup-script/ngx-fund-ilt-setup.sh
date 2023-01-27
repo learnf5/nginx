@@ -11,7 +11,8 @@
 ##      bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
 ## sudo bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
 #
-## sudo rm -rf /data ; sudo rm -rf /home/ubuntu ; sudo rm -f ~/Desktop/Double-Click-2-Run-Labs ; sudo rm -rf ~/NGINX-Fundamentals-Labs/
+## sudo rm -rf /data ; sudo rm -rf /home/ubuntu ; sudo rm -f ~/Desktop/Double-Click-2-Run-Labs ; sudo rm -rf ~/NGINX-Fundamentals-Labs/ ; sudo rm -rf ~/Desktop/Lab_Files
+
 #
 ## This is the start of the script
 
