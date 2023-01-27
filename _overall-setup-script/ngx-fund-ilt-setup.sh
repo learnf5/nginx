@@ -24,10 +24,6 @@
 ##
 ## This is the start of the script
 
-## Variables
-GREEN='\033[0;32m'
-NC='\033[0m'
-
 echo "=========================================================================="
 echo " Step 1 of 5  - Starting the Lab System Setup"
 echo "=========================================================================="
@@ -38,7 +34,7 @@ read -p "You will be prompted to press the RETURN key after each phase of the pr
 echo "=========================================================================="
 echo " Step 2 of 5 - Pull down HTML Labs and Make Desktop Icon"
 echo "=========================================================================="
-wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/nginx-fundamentals-labs.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/nginx-fundamentals-labs.tgz
 cd /home/student
 tar xzf /tmp/nginx-fundamentals-labs.tgz
 ln -s /home/student/NGINX-Fundamentals-Labs/index.html /home/student/Desktop/Double-Click-2-Run-Labs
@@ -56,7 +52,7 @@ read -p "Press the ENTER key to proceed"
 echo "=========================================================================="
 echo " Step 3 of 5  - Pull down and expand the public_html tree"
 echo "=========================================================================="
-wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
 cd /home
 tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
@@ -74,7 +70,7 @@ read -p "Press the ENTER key to proceed"
 echo "=========================================================================="
 echo " Step 4 of 5  - Pull down and expand the data/images tree"
 echo "=========================================================================="
-wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
 cd /
 tar -xzf /tmp/data-images.tgz
 chmod -R +x /data
@@ -92,7 +88,7 @@ read -p "Press the ENTER key to proceed"
 echo "=========================================================================="
 echo " Step 5 of 5  - Get and place the data/server2 tree"
 echo "=========================================================================="
-wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
 cd /
 tar -xzf /tmp/data-server2.tgz
 chmod -R +x /data
