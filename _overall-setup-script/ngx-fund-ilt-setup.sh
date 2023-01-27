@@ -58,10 +58,10 @@ tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo " Check for the /home/ubuntu/public_html entry, as well as the permissions in the tree output"
+echo " Check for the /home/ubuntu/public_html entry"
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -ld /home/ubuntu && STEP3="public_html is PRESENT" ; tree -p /home/ubuntu/public_html"
+ls -ld /home/ubuntu && STEP3="public_html is PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
