@@ -43,7 +43,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Verify the presence of the Labs *index.html* file"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -l /home/student/NGINX-Fundamentals-Labs/index.html
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="Labs index file is PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
@@ -104,3 +104,5 @@ read -p "Press the ENTER key to proceed"
 echo "=========================================================================="
 echo "If you saw the required output, the system is setup for the ILT Labs"
 echo "=========================================================================="
+
+echo $STEP2 
