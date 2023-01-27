@@ -61,7 +61,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /home/ubuntu/public_html entry, as well as the permissions in the tree output"
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -ld /home/ubuntu ; tree -p /home/ubuntu/public_html
+ls -ld /home/ubuntu && STEP3="public_html is PRESENT ; tree -p /home/ubuntu/public_html"
 
 read -p "Press the ENTER key to proceed"
 
@@ -79,7 +79,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/images directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data
+tree -p /data && STEP4="data/images is PRESENT
 
 read -p "Press the ENTER key to proceed"
 
@@ -97,12 +97,16 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/server2 directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data
+tree -p /data && STEP5="data/server2 is PRESENT
 
 read -p "Press the ENTER key to proceed"
 
-echo "=========================================================================="
-echo "If you saw the required output, the system is setup for the ILT Labs"
-echo "=========================================================================="
+echo "======================================================================================="
+echo "If you see confirmation of all step results below, the system is setup for the ILT Labs"
+echo "======================================================================================="
 
-echo $STEP2 
+echo "STEP 1:  OK"
+echo "STEP 2:  $STEP2"
+echo "STEP 3:  $STEP3"
+echo "STEP 4:  $STEP4"
+echo "STEP 5:  $STEP5"
