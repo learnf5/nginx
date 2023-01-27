@@ -1,3 +1,5 @@
+#!/bin/bash
+#
 # Setup an NGINX Fundamentals Workstation for ILT Labs
 #
 ## Suggested method to execute the script on the Lab System 
@@ -5,6 +7,11 @@
 ## Copy and Paste the below command to the Lab System terminal
 #
 # wget -O - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
+#
+##      bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
+## sudo bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
+#
+## sudo rm -rf /data ; sudo rm -rf /home/ubuntu ; sudo rm -f ~/Desktop/Double-Click-2-Run-Labs ; sudo rm -rf ~/NGINX-Fundamentals-Labs/
 #
 ## This is the start of the script
 
@@ -24,7 +31,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo "Check to see if the ls -l output below succeeded and the files are present"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -l /home/student/NGINX-Fundamentals-Labs/index.html ; ls -l /home/student/Desktop/*
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html
 
 read -p "Press the ENTER key to proceed"
 
@@ -68,7 +75,7 @@ clear
 echo "+++++ This is step 5 of 5  - Get and place the data/server2 tree +++++++++++"
 wget -nv -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
 cd /
-tar -xzvf /tmp/data-server2.tgz
+tar -xzf /tmp/data-server2.tgz
 chmod -R +x /data
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
