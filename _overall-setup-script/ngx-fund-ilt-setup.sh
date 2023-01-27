@@ -24,6 +24,10 @@
 ##
 ## This is the start of the script
 
+## Variables
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 echo "=========================================================================="
 echo " Step 1 of 5  - Starting the Lab System Setup"
 echo "=========================================================================="
@@ -102,11 +106,11 @@ tree -p /data && STEP5="OK"
 read -p "Press the ENTER key to proceed"
 
 echo "======================================================================================="
-echo "If you see confirmation of all step results below, the system is setup for the ILT Labs"
+echo "If all of the Steps return an OK value, the system is setup for ILT Lab Usage"
 echo "======================================================================================="
 
-echo "STEP 1:  OK"
-echo "STEP 2:  $STEP2"
-echo "STEP 3:  $STEP3"
-echo "STEP 4:  $STEP4"
-echo "STEP 5:  $STEP5"
+echo "STEP 1: ${GREEN}OK$NC"
+echo "STEP 2: ${GREEN}STEP2$NC$"
+echo "STEP 3: ${GREEN}STEP3$NC$"
+echo "STEP 4: ${GREEN}STEP4$NC$"
+echo "STEP 5: ${GREEN}STEP5$NC$"
