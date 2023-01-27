@@ -39,9 +39,9 @@ cd /home/student
 tar xzf /tmp/nginx-fundamentals-labs.tgz
 ln -s /home/student/NGINX-Fundamentals-Labs/index.html /home/student/Desktop/Double-Click-2-Run-Labs
 
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 echo " Verify the presence of the Labs *index.html* file"
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 
 ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="OK"
 
@@ -57,9 +57,9 @@ cd /home
 tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
 
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 echo " Check for the /home/ubuntu/public_html entry"
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 
 ls -ld /home/ubuntu && STEP3="OK"
 
@@ -75,9 +75,9 @@ cd /
 tar -xzf /tmp/data-images.tgz
 chmod -R +x /data
 
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 echo " Check for the /data/images directory and read permissions on it"
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 
 tree -p /data && STEP4="OK"
 
@@ -93,20 +93,20 @@ cd /
 tar -xzf /tmp/data-server2.tgz
 chmod -R +x /data
 
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 echo " Check for the /data/server2 directory and read permissions on it"
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "--------------------------------------------------------------------------"
 
 tree -p /data && STEP5="OK"
 
 read -p "Press the ENTER key to proceed"
 
-echo "======================================================================================="
-echo "If all of the Steps return an OK value, the system is setup for ILT Lab Usage"
-echo "======================================================================================="
+echo "==================================RESULTS================================="
+echo "If all Steps show a green OK, System is setup for Lab Usage"
+echo "=========================================================================="
 
 echo -e "STEP 1: \e[0;32mOK \e[0m"
-echo -e "STEP 2: \e[0;32mOK \e[0m"
-echo -e "STEP 3: \e[0;32mOK \e[0m"
-echo -e "STEP 4: \e[0;32mOK \e[0m"
-echo -e "STEP 5: \e[0;32mOK \e[0m"
+echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
+echo -e "STEP 3: \e[0;32m$STEP3 \e[0m"
+echo -e "STEP 4: \e[0;32m$STEP4 \e[0m"
+echo -e "STEP 5: \e[0;32m$STEP5 \e[0m"
