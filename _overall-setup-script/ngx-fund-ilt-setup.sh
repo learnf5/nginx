@@ -1,7 +1,8 @@
 #!/bin/bash
 #
-# PURPOSE:  Setup a stock NGINX Fundamentals Workstation for ILT Labs
+# PURPOSE:  Script to setup a stock NGINX Fundamentals Workstation for ILT Labs
 #
+##################################################################
 ## Suggested method to execute the script on the Lab System 
 ##################################################################
 ### To do the setup with confirmations at each Step use the below command:
@@ -13,9 +14,14 @@
 ###
 ### wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
 ##################################################################
-### IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
+#
+##################################################################
+## IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
+##################################################################
 ###
 ### sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+##################################################################
+#
 ##################################################################
 ### Copy and paste the below command to verify the system doesn't have any Lab files on it
 ###
@@ -101,11 +107,11 @@ tree -p /data && STEP5="OK"
 
 read -p "Press the ENTER key to proceed"
 
-echo ""
-echo "==================================RESULTS================================="
+echo "\ "
+echo "##################################RESULTS#################################"
 echo "If all Steps show a green OK, System is setup for Lab Usage"
 echo "##########################################################################"
-echo ""
+echo "\ "
 
 echo -e "STEP 1: \e[0;32mOK \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
