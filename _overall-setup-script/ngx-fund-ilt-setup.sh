@@ -1,18 +1,26 @@
 #!/bin/bash
 #
-# Setup an NGINX Fundamentals Workstation for ILT Labs
+# PURPOSE:  Setup a stock NGINX Fundamentals Workstation for ILT Labs
 #
 ## Suggested method to execute the script on the Lab System 
+##################################################################
+## Copy and Paste the below commands to the Lab System terminal
+##
+### sudo -i <enter the password if prompted> 
+### bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
+##################################################################
+## You can alternatively use the below, but it will not stop and prompt for Enter after each step
+##
+### wget -O - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
+##################################################################
+## Copy and Paste the below command to reset the system to it's previous state
 #
-## Copy and Paste the below command to the Lab System terminal
+## sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+##################################################################
+## Copy and paste the below command to verify the system doesn't have any Lab files on it
 #
-# wget -O - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
-#
-##      bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
-## sudo bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
-#
-## sudo rm -rf /data ; sudo rm -rf /home/ubuntu ; sudo rm -f ~/Desktop/Double-Click-2-Run-Labs ; sudo rm -rf ~/NGINX-Fundamentals-Labs/ ; sudo rm -rf ~/Desktop/Lab_Files
-
+## ls -l /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+##################################################################
 #
 ## This is the start of the script
 
@@ -50,7 +58,7 @@ tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo " Check for the /home/ubuntu entry, as well as the permissions in the tree output"
+echo " Check for the /home/ubuntu/public_html entry, as well as the permissions in the tree output"
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 ls -ld /home/ubuntu ; tree -p /home/ubuntu/public_html
@@ -68,7 +76,7 @@ tar -xzf /tmp/data-images.tgz
 chmod -R +x /data
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo "Check to see if the tree output below succeeded and the directory is present"
+echo " Check for the /data/images directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 tree -p /data
@@ -86,7 +94,7 @@ tar -xzf /tmp/data-server2.tgz
 chmod -R +x /data
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo "Check to see if the tree output below succeeded and the directory is present"
+echo " Check for the /data/server2 directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 tree -p /data
