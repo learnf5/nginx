@@ -4,24 +4,24 @@
 #
 ## Suggested method to execute the script on the Lab System 
 ##################################################################
-## Copy and Paste the below commands to the Lab System terminal
-##
+### Copy and Paste the below commands to the Lab System terminal
+###
 ### sudo -i <enter the password if prompted> 
 ### bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
 ##################################################################
-## You can alternatively use the below, but it will not stop and prompt for Enter after each step
-##
+### You can alternatively use the below, but it will not stop and prompt for Enter after each step
+###
 ### wget -O - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
 ##################################################################
-## Copy and Paste the below command to reset the system to it's previous state
-#
-## sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+### IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
+###
+### sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
 ##################################################################
-## Copy and paste the below command to verify the system doesn't have any Lab files on it
-#
-## ls -l /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+### Copy and paste the below command to verify the system doesn't have any Lab files on it
+###
+### ls -l /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
 ##################################################################
-#
+##
 ## This is the start of the script
 
 echo "=========================================================================="
