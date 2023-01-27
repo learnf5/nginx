@@ -109,8 +109,8 @@ echo "==========================================================================
 echo "If all of the Steps return an OK value, the system is setup for ILT Lab Usage"
 echo "======================================================================================="
 
-echo "STEP 1: ${GREEN}OK$NC"
-echo "STEP 2: ${GREEN}STEP2$NC$"
-echo "STEP 3: ${GREEN}STEP3$NC$"
-echo "STEP 4: ${GREEN}STEP4$NC$"
-echo "STEP 5: ${GREEN}STEP5$NC$"
+echo -e "STEP 1: ${GREEN}OK${NC}"
+echo -e "STEP 2: ${GREEN}STEP2${NC}"
+echo -e "STEP 3: ${GREEN}STEP3${NC}"
+echo -e "STEP 4: ${GREEN}STEP4${NC}"
+echo -e "STEP 5: ${GREEN}STEP5${NC}"
