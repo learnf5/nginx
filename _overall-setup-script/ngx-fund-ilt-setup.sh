@@ -43,7 +43,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Verify the presence of the Labs *index.html* file"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="Labs index file is PRESENT"
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="Labs index file is:  PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
@@ -61,7 +61,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /home/ubuntu/public_html entry"
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -ld /home/ubuntu && STEP3="public_html is PRESENT"
+ls -ld /home/ubuntu && STEP3="The public_html dir is:  PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
@@ -79,7 +79,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/images directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data && STEP4="data/images is PRESENT"
+tree -p /data && STEP4="The data/images dir is:  PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
@@ -97,7 +97,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/server2 directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data && STEP5="data/server2 is PRESENT"
+tree -p /data && STEP5="The data/server2 dir is: PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
