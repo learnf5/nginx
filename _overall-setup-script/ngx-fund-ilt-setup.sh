@@ -61,7 +61,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /home/ubuntu/public_html entry, as well as the permissions in the tree output"
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-ls -ld /home/ubuntu && STEP3="public_html is PRESENT ; tree -p /home/ubuntu/public_html"
+ls -ld /home/ubuntu && STEP3="public_html is PRESENT" ; tree -p /home/ubuntu/public_html"
 
 read -p "Press the ENTER key to proceed"
 
@@ -79,7 +79,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/images directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data && STEP4="data/images is PRESENT
+tree -p /data && STEP4="data/images is PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
@@ -97,7 +97,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Check for the /data/server2 directory and read permissions on it"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-tree -p /data && STEP5="data/server2 is PRESENT
+tree -p /data && STEP5="data/server2 is PRESENT"
 
 read -p "Press the ENTER key to proceed"
 
