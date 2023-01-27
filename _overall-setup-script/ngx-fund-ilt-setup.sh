@@ -111,6 +111,6 @@ echo "==========================================================================
 
 echo -e "STEP 1: \e[0;32mOK \e[0m"
 echo -e "STEP 2: \e[0;32mOK \e[0m"
-echo -e "STEP 3: \e[0;32mOK \e[0m}"
+echo -e "STEP 3: \e[0;32mOK \e[0m"
 echo -e "STEP 4: \e[0;32mOK \e[0m"
-echo -e "STEP 5: \e[0;32mOK \e[0m}"
+echo -e "STEP 5: \e[0;32mOK \e[0m"
