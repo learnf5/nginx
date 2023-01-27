@@ -26,7 +26,7 @@
 
 ## Variables
 GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
 echo "=========================================================================="
 echo " Step 1 of 5  - Starting the Lab System Setup"
@@ -109,8 +109,8 @@ echo "==========================================================================
 echo "If all of the Steps return an OK value, the system is setup for ILT Lab Usage"
 echo "======================================================================================="
 
-echo -e "STEP 1: ${GREEN}OK${NC}"
-echo -e "STEP 2: ${GREEN}STEP2${NC}"
-echo -e "STEP 3: ${GREEN}STEP3${NC}"
-echo -e "STEP 4: ${GREEN}STEP4${NC}"
-echo -e "STEP 5: ${GREEN}STEP5${NC}"
+echo -e "STEP 1: \e[0;32mOK \e[0m"
+echo -e "STEP 2: \e[0;32mOK \e[0m"
+echo -e "STEP 3: \e[0;32mOK \e[0m}"
+echo -e "STEP 4: \e[0;32mOK \e[0m"
+echo -e "STEP 5: \e[0;32mOK \e[0m}"
