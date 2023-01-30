@@ -49,7 +49,7 @@ echo "--------------------------------------------------------------------------
 echo " Verify the presence of the Labs *index.html* file"
 echo "--------------------------------------------------------------------------"
 
-ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="OK"
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -67,7 +67,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /home/ubuntu/public_html entry"
 echo "--------------------------------------------------------------------------"
 
-ls -ld /home/ubuntu && STEP3="OK"
+ls -ld /home/ubuntu && STEP3="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -85,7 +85,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /data/images directory and read permissions on it"
 echo "--------------------------------------------------------------------------"
 
-tree -p /data && STEP4="OK"
+tree -p /data && STEP4="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -103,17 +103,17 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /data/server2 directory and read permissions on it"
 echo "--------------------------------------------------------------------------"
 
-tree -p /data && STEP5="OK"
+tree -p /data && STEP5="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
 echo "##########################################################################"
 echo "################################# RESULTS ################################"
-echo -e "##### If all Steps show a \e[0;32mGreen OK\e[0m the System is setup for Lab Usage ####"
+echo -e "## If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage ##"
 echo "##########################################################################"
 echo "##########################################################################"
 
-echo -e "STEP 1: \e[0;32mOK \e[0m"
+echo -e "STEP 1: \e[0;32mOK - Step Verified \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
 echo -e "STEP 3: \e[0;32m$STEP3 \e[0m"
 echo -e "STEP 4: \e[0;32m$STEP4 \e[0m"
