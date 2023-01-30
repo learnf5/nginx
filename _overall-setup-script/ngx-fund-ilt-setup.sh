@@ -25,7 +25,7 @@
 #####################################################################
 ### Copy and paste the below command to verify the system doesn't have any Lab files on it
 ###
-### ls -l /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
+###     ls -l /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files
 #####################################################################
 ##
 ## This is the start of the script
