@@ -67,7 +67,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /home/ubuntu/public_html entry"
 echo "--------------------------------------------------------------------------"
 
-ls -ld /home/ubuntu && STEP3="OK - Step Verified"
+ls -ld /home/ubuntu/public_html && STEP3="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
