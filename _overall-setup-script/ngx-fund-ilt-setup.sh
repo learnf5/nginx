@@ -2,44 +2,44 @@
 #
 # PURPOSE:  Script to setup a stock NGINX Fundamentals Workstation for ILT Labs
 #
-##################################################################
+#####################################################################
 ## Suggested method to execute the script on the Lab System 
-##################################################################
+#####################################################################
 ### To do the setup with confirmations at each Step use the below command:
 ###
 ### sudo -i <enter the password if prompted> 
 ### bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
-##################################################################
+#####################################################################
 ### To do the setup with no confirmations, use the below command:
 ###
 ### wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
-##################################################################
+#####################################################################
 #
-##################################################################
+#####################################################################
 ## IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
-##################################################################
+#####################################################################
 ###
 ### sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
-##################################################################
+#####################################################################
 #
-##################################################################
+#####################################################################
 ### Copy and paste the below command to verify the system doesn't have any Lab files on it
 ###
 ### ls -l /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files
-##################################################################
+#####################################################################
 ##
 ## This is the start of the script
 
-echo "##########################################################################"
+echo "#############################################################################"
 echo " Step 1 of 5  - Starting the Lab System Setup"
-echo "##########################################################################"
+echo "#############################################################################"
 read -p "You will be prompted to press the RETURN key after each phase of the prep executes"
 
 ## Get and place NGINX Fundamentals Labs and make a desktop icon
 
-echo "##########################################################################"
+echo "#############################################################################"
 echo " Step 2 of 5 - Pull down HTML Labs and Make Desktop Icon"
-echo "##########################################################################"
+echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/nginx-fundamentals-labs.tgz
 cd /home/student
 tar xzf /tmp/nginx-fundamentals-labs.tgz
@@ -55,9 +55,9 @@ read -p "Press the ENTER key to proceed"
 
 ## Get and place the public_html contents
 
-echo "##########################################################################"
+echo "#############################################################################"
 echo " Step 3 of 5  - Pull down and expand the public_html tree"
-echo "##########################################################################"
+echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
 cd /home
 tar -xzf /tmp/public_html.tgz
@@ -73,9 +73,9 @@ read -p "Press the ENTER key to proceed"
 
 ## Get and place the data/images contents
 
-echo "##########################################################################"
+echo "#############################################################################"
 echo " Step 4 of 5  - Pull down and expand the data/images tree"
-echo "##########################################################################"
+echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
 cd /
 tar -xzf /tmp/data-images.tgz
@@ -91,9 +91,9 @@ read -p "Press the ENTER key to proceed"
 
 ## Get and place the data/server2 contents
 
-echo "##########################################################################"
+echo "#############################################################################"
 echo " Step 5 of 5  - Get and place the data/server2 tree"
-echo "##########################################################################"
+echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
 cd /
 tar -xzf /tmp/data-server2.tgz
@@ -107,11 +107,11 @@ tree -p /data && STEP5="OK - Step Verified"
 
 read -p "Press the ENTER key to proceed"
 
-echo "##########################################################################"
-echo "################################# RESULTS ################################"
-echo -e "## If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage ##"
-echo "##########################################################################"
-echo "##########################################################################"
+echo "#############################################################################"
+echo "################################# RESULTS ###################################"
+echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage #"
+echo "#############################################################################"
+echo "#############################################################################"
 
 echo -e "STEP 1: \e[0;32mOK - Step Verified \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
