@@ -38,6 +38,7 @@ echo "##########################################################################
 echo " Step 1 of 5  - Starting the Lab System Setup"
 echo "#############################################################################"
 read -p "You will be prompted to press the RETURN key after each phase of the prep executes"
+sudo apt install -y tree
 
 ## Get and place NGINX Fundamentals Labs and make a desktop icon
 
