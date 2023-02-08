@@ -117,8 +117,24 @@ echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is set
 echo "#############################################################################"
 echo "#############################################################################"
 
+## Do final cleanup of setup steps
+
+echo "#############################################################################"
+echo " Step 6 of 6  - Clear Bash History and reload nginx services etc."
+echo "#############################################################################"
+sudo bash -c 
+sudo nginx -s reload && STEP6="OK - Step Verified"
+
+echo "#############################################################################"
+echo "################################# RESULTS ###################################"
+echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage #"
+echo "#############################################################################"
+echo "#############################################################################"
+
 echo -e "STEP 1: \e[0;32mOK - Step Verified \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
 echo -e "STEP 3: \e[0;32m$STEP3 \e[0m"
 echo -e "STEP 4: \e[0;32m$STEP4 \e[0m"
 echo -e "STEP 5: \e[0;32m$STEP5 \e[0m"
+echo -e "STEP 6: \e[0;32m$STEP6 \e[0m"
+
