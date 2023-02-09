@@ -35,7 +35,7 @@
 ## This is the start of the script
 
 echo "#############################################################################"
-echo " Step 1 of 5  - Starting the Lab System Setup"
+echo " Step 1 of 6  - Starting the Lab System Setup"
 echo "#############################################################################"
 read -p "You will be prompted to press the RETURN key after each phase of the prep executes"
 sudo apt install -y tree
@@ -43,7 +43,7 @@ sudo apt install -y tree
 ## Get and place NGINX Fundamentals Labs and make a desktop icon
 
 echo "#############################################################################"
-echo " Step 2 of 5 - Pull down HTML Labs and Make Desktop Icon"
+echo " Step 2 of 6 - Pull down HTML Labs and Make Desktop Icon"
 echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/nginx-fundamentals-labs.tgz
 cd /home/student
@@ -61,7 +61,7 @@ read -p "Press the ENTER key to proceed"
 ## Get and place the public_html contents
 
 echo "#############################################################################"
-echo " Step 3 of 5  - Pull down and expand the public_html tree"
+echo " Step 3 of 6  - Pull down and expand the public_html tree"
 echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
 cd /home
@@ -79,7 +79,7 @@ read -p "Press the ENTER key to proceed"
 ## Get and place the data/images contents
 
 echo "#############################################################################"
-echo " Step 4 of 5  - Pull down and expand the data/images tree"
+echo " Step 4 of 6  - Pull down and expand the data/images tree"
 echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
 cd /
@@ -97,7 +97,7 @@ read -p "Press the ENTER key to proceed"
 ## Get and place the data/server2 contents
 
 echo "#############################################################################"
-echo " Step 5 of 5  - Get and place the data/server2 tree"
+echo " Step 5 of 6  - Get and place the data/server2 tree"
 echo "#############################################################################"
 wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
 cd /
