@@ -15,7 +15,7 @@ do
            wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
            echo \n ;;
         "Mopup")
-           sudo mv /etc/nginx/conf.d/default.{bak,conf} ; ls -l /etc/nginx/conf.d/
+           sudo mv /etc/nginx/conf.d/default.{bak,conf} ; ls -l /etc/nginx/conf.d/ ; history -c
            echo \n ;;
         "Quit")
            echo "We're done"
