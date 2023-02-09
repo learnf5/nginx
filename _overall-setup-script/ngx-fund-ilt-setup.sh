@@ -7,8 +7,6 @@
 #####################################################################
 #
 #####################################################################
-## User-Interactive 
-#####################################################################
 ### To do the setup with confirmations at each Step use the below command:
 ###
 ### sudo -i <enter the password if prompted> 
@@ -20,18 +18,13 @@
 #####################################################################
 #
 #####################################################################
-## IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
+## Use the menu.sh script to have a menu for query/wipe/setup
 #####################################################################
 ###
-###  sudo rm -rf /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files /etc/nginx/conf.d/my*.* /var/log/nginx/*{access,error}.log
+### wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/menu/menu.sh > menu.sh
+### sudo -i menu.sh
 #####################################################################
 #
-#####################################################################
-### Copy and paste the below command to verify the system doesn't have any Lab files on it
-###
-### ls -ld /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files /etc/nginx/conf.d/* /var/log/nginx/*{access,error}.log
-#####################################################################
-##
 ## This is the start of the script
 
 echo "#############################################################################"
