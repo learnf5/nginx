@@ -23,7 +23,7 @@
 ## IMPORTANT:  To RESET an already-configured Lab Machine back to pre-setup state
 #####################################################################
 ###
-### sudo rm -rf /data /home/ubuntu ~/Desktop/Double-Click-2-Run-Labs ~/NGINX-Fundamentals-Labs/ ~/Desktop/Lab_Files /etc/nginx/conf.d/my*.* /var/log/nginx/*{access,error}.log
+###  sudo rm -rf /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files /etc/nginx/conf.d/my*.* /var/log/nginx/*{access,error}.log
 #####################################################################
 #
 #####################################################################
