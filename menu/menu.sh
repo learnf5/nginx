@@ -7,20 +7,16 @@ do
     case $act in
         "Query")
             ls -ld /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files /etc/nginx/conf.d/{my,ret,ssl}*.*/var/log/nginx/*{access,error}.log 
-            clear
-            echo \n ;;
+            clear ;;
         "Wipe")
            sudo rm -rf /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files /etc/nginx/conf.d/my*.* /var/log/nginx/*{access,error}.log && echo "Wipe Completed Successfuly."
-           clear
-           echo \n ;;
+           clear ;;
         "Setup")
            wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash
-           clear
-           echo \n ;;
+           clear ;;
         "Mopup")
            sudo mv /etc/nginx/conf.d/default.{bak,conf} ; ls -l /etc/nginx/conf.d/ ; history -c
-           clear
-           echo \n ;;
+           clear ;;
         "Quit")
            echo "We're done"
            break;;
