@@ -2,6 +2,8 @@
 
 PS3="Choose what # to perform an action: "
 
+clear
+
 select act in Query Wipe Setup Mopup Quit
 do
     case $act in
