@@ -114,7 +114,7 @@ sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/
 
 echo "#############################################################################"
 echo "################################# RESULTS ###################################"
-echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage #"
+echo -e "# If all Steps show a \e[0;32mOK - XXXX Verified\e[0m message the System is setup for Lab Usage"
 echo "#############################################################################"
 echo "#############################################################################"
 
