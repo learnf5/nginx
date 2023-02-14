@@ -105,20 +105,12 @@ tree -p /data && STEP5="OK - /data/server2 directory Verified"
 
 read -p "Press the ENTER key to proceed"
 
-echo "#############################################################################"
-echo "################################# RESULTS ###################################"
-echo -e "# If all Steps show a \e[0;32mOK - XXXXX Verified\e[0m the System is setup for Lab Usage #"
-echo "#############################################################################"
-echo "#############################################################################"
-
 ## Do final cleanup of setup steps
 
 echo "#############################################################################"
-echo " Step 6 of 6  - Clear Bash History and reload nginx services etc."
+echo " Step 6 of 6  - Pull clean default.conf and restart NGINX."
 echo "#############################################################################"
-sudo -i history -c
-history -c 
-sudo nginx -s reload && STEP6="OK - History deleted and NGINX Reload Verified"
+sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/main/lab02/default.conf && ls -l /etc/nginx/conf.d/ && sudo nginx -s reload && STEP6="OK - Clean Default.conf and NGINX Reloaded"
 
 echo "#############################################################################"
 echo "################################# RESULTS ###################################"

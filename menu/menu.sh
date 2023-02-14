@@ -14,8 +14,6 @@ do
         "Setup")
            wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash ;;
         "Mopup")
-           sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/main/lab02/default.conf ; ls -l /etc/nginx/conf.d/ 
-           sudo nginx -s reload && echo "NGINX Reloaded"
            sudo -i history -c
            history -c ;;
         "Edit")
