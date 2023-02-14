@@ -47,7 +47,7 @@ echo "--------------------------------------------------------------------------
 echo " Verify the presence of the Labs *index.html* file"
 echo "--------------------------------------------------------------------------"
 
-ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="OK - Step Verified"
+ls -l /home/student/NGINX-Fundamentals-Labs/index.html && STEP2="OK - NGINX Lab Files Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -65,7 +65,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /home/ubuntu/public_html entry"
 echo "--------------------------------------------------------------------------"
 
-ls -ld /home/ubuntu/public_html && STEP3="OK - Step Verified"
+ls -ld /home/ubuntu/public_html && STEP3="OK - public_html directory Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -83,7 +83,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /data/images directory and read permissions on it"
 echo "--------------------------------------------------------------------------"
 
-tree -p /data && STEP4="OK - Step Verified"
+tree -p /data && STEP4="OK - /data/images directory Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -101,7 +101,7 @@ echo "--------------------------------------------------------------------------
 echo " Check for the /data/server2 directory and read permissions on it"
 echo "--------------------------------------------------------------------------"
 
-tree -p /data && STEP5="OK - Step Verified"
+tree -p /data && STEP5="OK - /data/server2 directory Verified"
 
 read -p "Press the ENTER key to proceed"
 
@@ -125,7 +125,7 @@ echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is set
 echo "#############################################################################"
 echo "#############################################################################"
 
-echo -e "STEP 1: \e[0;32mOK - Step Verified \e[0m"
+echo -e "STEP 1: \e[0;32mOK - Setup Started \e[0m"
 echo -e "STEP 2: \e[0;32m$STEP2 \e[0m"
 echo -e "STEP 3: \e[0;32m$STEP3 \e[0m"
 echo -e "STEP 4: \e[0;32m$STEP4 \e[0m"
