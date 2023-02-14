@@ -14,7 +14,7 @@ do
         "Setup")
            wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh | sudo bash ;;
         "Mopup")
-           sudo -i history -c && history -c && echo "Histories Cleared";;
+           sudo -i history -c && history -c && echo "** Histories Cleared **" ;;
         "Edit")
            sudo vim menu.sh ;;
         "Quit")
