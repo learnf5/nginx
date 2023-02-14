@@ -107,7 +107,7 @@ read -p "Press the ENTER key to proceed"
 
 echo "#############################################################################"
 echo "################################# RESULTS ###################################"
-echo -e "# If all Steps show a \e[0;32mOK - Step Verified\e[0m the System is setup for Lab Usage #"
+echo -e "# If all Steps show a \e[0;32mOK - XXXXX Verified\e[0m the System is setup for Lab Usage #"
 echo "#############################################################################"
 echo "#############################################################################"
 
@@ -116,8 +116,9 @@ echo "##########################################################################
 echo "#############################################################################"
 echo " Step 6 of 6  - Clear Bash History and reload nginx services etc."
 echo "#############################################################################"
+sudo -i history -c
 history -c 
-sudo nginx -s reload && STEP6="OK - Step Verified"
+sudo nginx -s reload && STEP6="OK - History deleted and NGINX Reload Verified"
 
 echo "#############################################################################"
 echo "################################# RESULTS ###################################"
