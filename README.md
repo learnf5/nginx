@@ -28,25 +28,20 @@ Username/Password:
 
 1.  Use the Skytap Template supplied from the NGINX Fundamentals Developer Team
 2.  Boot the system and open the **Terminal** application
-3.  You'll be running the `ngx-fund-ilt-setup.sh` script from the LearnF5/NGINX repo and following the instructions from there.
-4.  Execute the following command in the **Terminal** application to elevate yourself to the `root` user.
-    
+3.  Pull down the menu.sh script to the system with the command (all on one line):
     ```
-    sudo -i
+    wget -qO - https://raw.githubusercontent.com/learnf5/nginx/main/menu/menu.sh > menu.sh
     ```
-5.  Copy and paste the following URL into the root user **Terminal** application and press **ENTER**
-
+4.  Change the permissions to add execute to the script and run it with the command:
     ```
-    bash <(curl -s https://raw.githubusercontent.com/learnf5/nginx/main/_overall-setup-script/ngx-fund-ilt-setup.sh)
+    chmod +x menu.sh ; ./menu.sh
     ```
-
-6.  Follow the on-screen instructions to move through the 5 **Setup Steps**, pressing **RETURN** if prompted.
-
-7.  Inspect the results block at the end of the script to see if all 5 of the Steps are  displaying a green `OK - Step Verified` message
-8.  You can additionally verify the presence of the necessary lab configuration using the command:
-
-    ```
-    ls -l /data /home/ubuntu /home/student/Desktop/Double-Click-2-Run-Labs /home/student/NGINX-Fundamentals-Labs/ /home/student/Desktop/Lab_Files
-    ```
-
-8.  The system is now ready to be used for testing or it can be replicated for use in ILT courses.
+5.  You'll see the menu items, 1-6 shown on the console, with a prompt.
+6.  The normal order of the setup is:
+-  A) Confirm the current state by pressing `1` and `ENTER`
+-  B) Do the wipe (clear off old training files) with a `2` and `ENTER` 
+-  C) Setup the system with a `3` and `ENTER` (look for the green OKs)
+-  D) Finish the setup of default.conf and clearing history with a `4` and `ENTER`.
+7.  Do a final setup confirmation by pressing `1` and `ENTER` again to inspect what's shown for any errors.
+8.  When satisfied, press `6` and `ENTER` to end the script
+9.  Immediately shutdown the newly-setup lab system, it's ready to use.
