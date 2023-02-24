@@ -117,7 +117,7 @@ sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/
 
 echo "#############################################################################"
 echo -e "################################# \e[0;32mRESULTS\e[0m ###################################"
-echo -e "# If all Steps show a \e[0;32mOK Verified\e[0m message the System is setup #"
+echo -e "#### If all Steps show a \e[0;32mOK Verified\e[0m message the System is setup ####"
 echo "#############################################################################"
 echo "#############################################################################"
 
