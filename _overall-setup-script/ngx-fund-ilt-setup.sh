@@ -15,7 +15,7 @@
 #    - NGINX OSS 1.2.1 and NGINX Plus R27 or higher     
 #
 #####################################################################
-## Methods to Execute this Script on Lab Systems
+### Methods to Execute this Script on Lab Systems
 #####################################################################
 ###
 ### To do the setup with confirmations at each Step use the below command:
