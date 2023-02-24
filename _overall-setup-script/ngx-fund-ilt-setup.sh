@@ -116,7 +116,7 @@ echo "##########################################################################
 sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/main/lab02/default.conf && ls -l /etc/nginx/conf.d/ && sudo nginx -s reload && STEP6="OK - Clean Default.conf and NGINX Reloaded"
 
 echo "#############################################################################"
-echo "################################# \e[0;32mRESULTS\e[0m ###################################"
+echo -e "################################# \e[0;32mRESULTS\e[0m ###################################"
 echo -e "# If all Steps show a \e[0;32mOK - XXXX Verified\e[0m message the System is setup for Lab Usage"
 echo "#############################################################################"
 echo "#############################################################################"
