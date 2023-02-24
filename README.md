@@ -22,7 +22,7 @@ Networking Configuration:
 
 Username/Password:
 - `student`/`student`
-- `root`/use `sudo -i passwd` to reset
+- `root`/`nginx` `sudo -i passwd` to reset
 
 # Recommended Setup Steps for ILT Course
 
@@ -38,10 +38,10 @@ Username/Password:
     ```
 5.  You'll see the menu items, 1-6 shown on the console, with a prompt.
 6.  The normal order of the setup is:
--  A) Confirm the current state by pressing `1` and `ENTER`
--  B) Do the wipe (clear off old training files) with a `2` and `ENTER` 
--  C) Setup the system with a `3` and `ENTER` (look for the green OKs)
--  D) Finish the setup of default.conf and clearing history with a `4` and `ENTER`.
+-  1) Confirm the current state by pressing `1` and `ENTER`
+-  2) Do the wipe (clear off old training files) with a `2` and `ENTER` 
+-  3) Setup the system with a `3` and `ENTER` (look for the green OKs)
+-  4) Finish the setup of default.conf and clearing history with a `4` and `ENTER`.
 7.  Do a final setup confirmation by pressing `1` and `ENTER` again to inspect what's shown for any errors.
 8.  When satisfied, press `6` and `ENTER` to end the script
-9.  Immediately shutdown the newly-setup lab system, it's ready to use.
+9.  Immediately shutdown (gracefully with `sudo shutdown -h now`)the newly-setup lab system, it's ready to use.
