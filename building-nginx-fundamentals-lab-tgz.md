@@ -1,7 +1,8 @@
 1) Publish the complete lab guide from Xyleme
-2) Use NGINX NOVA - CDS
-3) Choose ZIP file output
-4) Download the ZIP to a local system
+2) Update Publishing Date on Cover Page in Xyleme
+3) Use NGINX NOVA - CDS
+4) Choose ZIP file output
+5) Download the ZIP to a local system
 ** Damian copied the zip over to a linux workstation to insure no macOS files in the tgz output **
 5) Unpackage the ZIP - there are two internal folder layers, you need the files in the second layer
 6) Rename the folder containing all the HTML Lab Guide files - NGINX-Fundamentals-Labs
