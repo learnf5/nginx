@@ -1,4 +1,4 @@
-# These are the files for Lab 12
+# These are the files for Lab 11
 
 # LPS scripting
 
