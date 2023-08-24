@@ -18,7 +18,7 @@ upstream myServers {
     server 172.16.20.161:80 route=www1;
     server 172.16.20.162:80 route=www2;
     server 172.16.20.163:80 route=www3;
-    sticky route $route_cookie $route_uri;
+#    sticky route $route_cookie $route_uri;
 #    sticky cookie my_cookie expires=1h;
 }
 
