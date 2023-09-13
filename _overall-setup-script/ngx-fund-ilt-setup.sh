@@ -65,7 +65,7 @@ read -p "Press the ENTER key to proceed"
 echo "#############################################################################"
 echo " Step 3 of 6  - Pull down and expand the public_html tree"
 echo "#############################################################################"
-wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab03/public_html.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab02/public_html.tgz
 cd /home
 tar -xzf /tmp/public_html.tgz
 chmod -R +x /home/ubuntu
@@ -81,7 +81,7 @@ read -p "Press the ENTER key to proceed"
 echo "#############################################################################"
 echo " Step 4 of 6  - Pull down and expand the data/images tree"
 echo "#############################################################################"
-wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab05/data-images.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab04/data-images.tgz
 cd /
 tar -xzf /tmp/data-images.tgz
 chmod -R +x /data
@@ -97,7 +97,7 @@ read -p "Press the ENTER key to proceed"
 echo "#############################################################################"
 echo " Step 5 of 6  - Get and place the data/server2 tree"
 echo "#############################################################################"
-wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab08/data-server2.tgz
+wget -q -P /tmp https://github.com/learnf5/nginx/raw/main/lab07/data-server2.tgz
 cd /
 tar -xzf /tmp/data-server2.tgz
 chmod -R +x /data
@@ -113,7 +113,7 @@ read -p "Press the ENTER key to proceed"
 echo "#############################################################################"
 echo " Step 6 of 6  - Pull clean default.conf and restart NGINX."
 echo "#############################################################################"
-sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/main/lab02/default.conf && ls -l /etc/nginx/conf.d/ && sudo nginx -s reload && STEP6="OK - Clean Default.conf and NGINX Reloaded"
+sudo wget -qP /etc/nginx/conf.d https://raw.githubusercontent.com/learnf5/nginx/main/lab01/default.conf && ls -l /etc/nginx/conf.d/ && sudo nginx -s reload && STEP6="OK - Clean Default.conf and NGINX Reloaded"
 
 echo "#############################################################################"
 echo -e "################################# \e[0;32mRESULTS\e[0m ###################################"
