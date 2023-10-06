@@ -3,14 +3,14 @@ server {
     root /home/ubuntu/public_html;
 
     location /application1 {
-    index app1.html;
+        index app1.html;
     }
 
     location /application2 {
-    index app2.html;
+        index app2.html;
     }
 
     location /images {
-            root /data;
+        root /data;
     }
 }
